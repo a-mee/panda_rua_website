@@ -1,6 +1,6 @@
 # Panda Rua Website
 
-### This website is for the jewellery brand *Panda Rua* and was created for a project with the requirements that only HTML and CSS were to be used.
+### This website is for the jewellery brand *Panda Rua* and was created for a project with the requirements that only HTML and CSS were to be used. Can be viewed [here](https://panda-rua-website.vercel.app/index.html).
 <br>
 
 -----
