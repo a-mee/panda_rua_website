@@ -1,0 +1,45 @@
+table, tr, th, td {
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+table {
+    width: 50%;
+    margin: auto;
+}
+
+th {
+    height: 45px;
+    background-color: #38023B;
+    color: white;
+}
+
+td {
+    height: 26px;
+    text-align: center;
+    vertical-align: bottom;
+    padding: 10px 5px 0px 5px;
+}
+
+tr:nth-child(even) {
+    background-color: #CDDCEE;
+}
+
+tr:hover {
+    background-color: darkgray;
+    color: white;
+}
+
+h1 {
+    clear: both;
+    text-align: center;
+    font-weight: 100;
+    padding-top: 30px;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 30px;
+    letter-spacing: 0.5px;
+}

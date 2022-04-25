@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>About – Panda Rua Jewellery</title>
+    <link rel="stylesheet" href="css/website.css">
+    <link rel="stylesheet" href="css/about.css">
+</head>
+<body>
+    <header>
+        <div class="logobox">
+            <a href="index.html"><img id="logo" src="images/website_logo_circle_grey.png" alt="Panda Rua Logo"></a>
+        </div>
+      
+        <!--Navigation Bar-->
+        <nav class="navbar generalText">
+            <ul class="navflex">
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown"><a>Jewellery</a>
+                <div class="dropcontent">
+                    <a  href="gallery.html">Gallery</a>
+                    <span class="droptitle">Necklaces</span>
+                    <a href="item.html">Moon Necklace</a>
+                </div>
+                </li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="sizing.html">Sizing</a></li>
+            </ul>
+        </nav>
+    </header> 
+    <main>
+        <section class="wrapper">
+            <h1 class="titleText">Our Story</h1>
+            <p class="generalText">Hello my name is Amy. Welcome to Panda Rua! I am the creator and owner of the brand. I lovingly create all of our pieces in my home studio in Co. Dublin, Ireland. With a background in both sculpture and fashion design I have combined these skills with the intention of creating some beautiful, wearable pieces.
+            </p>
+            <p class="generalText">My favourite thing about jewellery is the stories that are very often intertwined with it. As a child I always loved going through my moms jewellery box and asking her for the tales behind each piece and as an adult, whenever I travel, I try to find a piece of jewellery by a local designer as a memento of that trip. I love that with jewellery you can carry these stories around with you everyday and it means so much to me that my jewellery could be a part of your story!
+            </p>
+            <p class="generalText">I really appreciate you taking the time to visit my website! If you have any questions at all don’t hesitate to contact me.</p>
+        </section>
+        <section class="wrapper">
+            <h1 class="titleText">Contact Us</h1>
+            <p class="generalText">Questions, comments or just to say "hi", please use the contact form below to get in touch, or email us at hello@pandarua.com.</p>
+            
+            <!--some code for form from: https://www.w3schools.com/html/html_forms.asp-->
+            <!--code for sending form to email address from: https://www.w3docs.com/snippets/html/how-to-create-mailto-forms.html-->
+            <form action="mailto:hello@pandarua.com" method="get" enctype="text/plain">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Name" required><br>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Email" required><br>
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="Phone Number" pattern="[0-9]*"><br>
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Message"></textarea><br>
+                <input class="button" type="submit" value="Submit">
+            </form> 
+        </section>
+    </main>
+    <footer>
+        <hr>
+        <ul id="foot-layout">
+            <li class="footnav">
+                <h3 class="titleText">Info</h3>
+                <ul id="footer-nav" class="generalText">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="about.html">Contact Us</a></li>
+                    <li><a href="sizing.html">Sizing</a></li>
+                </ul>
+            </li>
+            <li class="social">
+                <h3 class="titleText">Follow Us</h3>
+                <ul id="footer-social" class="generalText">
+                    <li><a href="https://www.instagram.com/panda.rua/?hl=en"><img src="images/insta-logo_May2016.png" alt="Instagram logo"></a></li>
+                    <li><a href="https://www.etsy.com/shop/PandaRua"><img src="images/etsy_logo.png" alt="Etsy logo"></a></li>
+                </ul>
+            </li>
+        </ul>
+    </footer>
+</body>
+</html> 

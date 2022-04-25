@@ -1,0 +1,160 @@
+.productCard img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.imageforzoom {
+    display: none;
+}
+
+.itemImage1 {
+    grid-area: focusImage;
+}
+
+.itemImage2 {
+    grid-area: smallImage1;
+}
+
+.itemImage3 {
+    grid-area: smallImage2;
+}
+
+.itemImage4 {
+    grid-area: smallImage3;
+}
+
+.itemImage5 {
+    grid-area: smallImage4;
+}
+
+.itemInfo {
+    grid-area: info;
+    border-left: solid lightgray 0.5px;
+    padding-left: 30px;
+}
+
+.itemInfo h1 {
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.itemInfo h2 {
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+
+.itemInfo h3 {
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+/* code to make the bullet points symbols from: https://stackoverflow.com/questions/3203252/unicode-character-as-bullet-for-list-item-in-css*/
+
+.itemInfo ul {
+    list-style: none;
+    padding: 0px;
+}
+
+.itemInfo ul li:before
+{
+    content: '\263D';
+    margin: 0 1em;
+}
+
+.itemInfo ul li:nth-child(even):before
+{
+    content: '\263E';
+    margin: 0 1em;
+}
+
+.gap {
+    grid-area: gap;
+    height: 20px;
+}
+
+.backBox {
+    grid-area: back;
+    border-bottom: solid lightgray 0.5px;
+}
+
+.backText {
+    text-decoration: none;
+    color: gray;
+    display: inline;
+    float: left;
+    margin: 0;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.arrow {
+    font-size: 1rem;
+    margin-right: 5px;
+}
+
+.backText:hover {
+    color: black;
+}
+
+.productCard {
+    max-width: 800px;
+    max-height: 600px;
+    margin: auto;
+    margin-top: 100px;
+    padding: 20px 50px 60px;
+    clear: both;
+    /* code to make the shadow from : https://css-tricks.com/almanac/properties/b/box-shadow/*/
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    display: grid;
+    grid-template-areas: 
+        'back back back back back back back'
+        'gap gap gap gap gap gap gap'
+        'focusImage focusImage focusImage focusImage info info info'
+        'focusImage focusImage focusImage focusImage info info info'
+        'focusImage focusImage focusImage focusImage info info info'
+        'smallImage1 smallImage2 smallImage3 smallImage4 info info info';
+    grid-gap: 15px;
+}
+
+/*images changing with hover*/
+
+
+.itemImage2:hover {
+    grid-area: focusImage;
+}
+
+.itemImage2:hover ~ .imageforzoom {
+    display: initial;
+    grid-area: smallImage1;
+}
+
+.itemImage3:hover {
+    grid-area: focusImage;
+}
+
+.itemImage3:hover ~ .imageforzoom {
+    display: initial;
+    grid-area: smallImage2;
+}
+
+.itemImage4:hover {
+    grid-area: focusImage;
+}
+
+.itemImage4:hover ~ .imageforzoom {
+    display: initial;
+    grid-area: smallImage3;
+}
+
+.itemImage5:hover {
+    grid-area: focusImage;
+}
+
+.itemImage5:hover ~ .imageforzoom {
+    display: initial;
+    grid-area: smallImage4;
+}

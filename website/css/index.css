@@ -1,0 +1,31 @@
+/*code for making video background from: https://blog.hubspot.com/website/video-background-css*/
+#background-video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+.logobox {
+    background-color: transparent;
+}
+
+#background-image {
+    display: none;
+}
+
+@media screen and (max-width: 700px) {
+    #background-video { 
+        display: none; 
+    }
+    #background-image { 
+        display: block;
+        width: 100%;
+    }
+}

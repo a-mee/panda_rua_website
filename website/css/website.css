@@ -1,0 +1,185 @@
+body {margin: 0;}
+
+.titleText {
+    font-family: sans-serif;
+}
+
+.generalText {
+    font-family: sans-serif;
+}
+
+* {
+    box-sizing: border-box
+}
+
+/*navbar*/
+
+header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+
+.logobox {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    background-color: white;
+}
+
+#logo {
+    padding: 20px;
+    width: 150px;
+    margin-left: auto;
+}
+
+.navbar {
+    border-bottom: 1px solid #808080;
+    border-top: 1px solid #808080;
+    padding: 10px;
+    padding-left: 150px;
+    padding-right: 150px;
+    background-color: white;
+}
+
+.navflex {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    color: #FFB9A7;
+}
+
+.navbar a:hover {
+    color: #808080;
+}
+
+.navbar li {
+    float: left;
+    padding: 10px 0px;
+    color: #FFB9A7;
+    font-size: 20px
+}
+
+.dropcontent {
+    display: none;
+    position: absolute;
+    padding-top: 20px;
+    background-color: white;
+}
+
+.dropcontent a, .dropcontent span {
+    padding: 12px 16px;
+    display: block;
+    margin-top: 8px;
+}
+
+.droptitle {
+    text-decoration: underline;
+    font-weight: 100;
+    color: #808080;
+}
+
+.dropdown:hover {
+    cursor: pointer;
+}
+
+
+.dropdown:hover .dropcontent {
+    display: block;
+}
+
+@media screen and (max-width: 700px) {
+    .navflex {
+        flex-direction: column;
+    }
+    .navbar {
+        padding: 0px;
+        padding-left: 45%;
+    }
+    .navflex > li > a {
+        padding: 10px;
+    }
+    
+    .navflex a:hover {
+        background-color: #808080;
+        color: white;
+    }
+}
+
+/*footer*/
+
+hr {
+    margin: 150px 30px 50px 30px;
+}
+
+#foot-layout {
+    list-style-type: none;
+    margin: 0px 100px;
+    padding: 0px;
+}
+
+#foot-layout h3 {
+    padding: 8px;
+}
+
+.footnav {
+    float: left;
+    margin-bottom: 80px
+}
+
+.social {
+    float: right
+}
+
+/*some code for making navbar from: https://www.w3schools.com/css/css_navbar_horizontal.asp*/
+
+#footer-nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#footer-nav a {
+    display: block;
+    padding: 8px;
+    text-decoration: none;
+    color: black;
+}
+
+#footer-social {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#footer-social img {
+    width: 29px;
+}
+
+#footer-social a {
+    display: block;
+    padding: 8px;
+    text-decoration: none;
+}
+
+#footer-social li {
+    float: left;
+    margin-left: 5px;
+}
+
+#footer-nav a:hover {
+    color: #FFB9A7;
+}
